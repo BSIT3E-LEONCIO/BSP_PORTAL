@@ -1,0 +1,69 @@
+CREATE DATABASE IF NOT EXISTS bsp_portal;
+USE bsp_portal;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(190) NOT NULL UNIQUE,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  membership_expires_at DATE NULL,
+  blocked_start DATE NULL,
+  blocked_end DATE NULL,
+  blocked_reason VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS admins (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS applications (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL UNIQUE,
+  surname VARCHAR(120) NOT NULL,
+  firstname VARCHAR(120) NOT NULL,
+  mi VARCHAR(10) NULL,
+  sex VARCHAR(30) NOT NULL,
+  civil_status VARCHAR(30) NOT NULL,
+  tenure VARCHAR(60) NULL,
+  serve_main VARCHAR(20) NOT NULL,
+  serve_sub VARCHAR(180) NOT NULL,
+  sponsoring_institutions VARCHAR(180) NULL,
+  council VARCHAR(120) NULL,
+  dob DATE NULL,
+  pob VARCHAR(150) NULL,
+  religion VARCHAR(100) NULL,
+  profession VARCHAR(120) NULL,
+  position_title VARCHAR(120) NULL,
+  status VARCHAR(30) DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  CONSTRAINT fk_app_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS payments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  proof_path VARCHAR(255) NOT NULL,
+  proof_path_back VARCHAR(255) NULL,
+  status VARCHAR(30) DEFAULT 'pending',
+  uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_pay_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS receipts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  receipt_no VARCHAR(40) NULL,
+  aar_no VARCHAR(40) NULL,
+  paid_for VARCHAR(120) NOT NULL,
+  amount DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+  payment_method VARCHAR(120) NOT NULL DEFAULT 'N/A',
+  released_at DATE NOT NULL,
+  note VARCHAR(255) NOT NULL DEFAULT 'Do not lose this receipt.',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_receipt_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
