@@ -1,0 +1,341 @@
+section {  
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #file-folder{
+    margin-top: 180px;
+  }
+  #file-folder .container {
+    max-width: 1500px; 
+    margin-bottom: 100px;
+  }
+  #file-folder h2{
+    position: relative;
+    margin-left: 180px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .container {
+    border-radius: 10px;
+    border: 5px 5px 5px 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #file-folder,
+  #file-folder h2,
+  .nav-tabs .nav-link,
+  .card-title,
+  .card-des {
+    color: black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  
+  #tablist .nav-item{
+    background-color: #f0f0f0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+   
+  }
+  .tab-content {
+    background-color: whitesmoke;
+    border-style: solid;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 280px;
+    max-height: 330px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+            -4px -4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+            -4px -4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-image-container {
+    width: 100%;
+    height: 64%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-icon {
+    font-size: 40px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 13px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #b40000;
+    cursor: default;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+  }
+  
+  .card-des {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    margin: 0;
+    font-size: 11px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #1797b8;
+    cursor: default;
+  }
+  
+
+
+
+/* RESUME */
+/**Left side CSS**/
+.left-box{
+  float: left;
+  box-shadow: 10px 10px 5px grey;
+  background-color: #b30000;
+  height: 961px;
+  width: 300px;
+  box-sizing: border-box;
+  margin: 15px 15px 15px 15px;
+}
+
+/**Left side content CSS**/
+.top-left{
+  position: relative;
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  box-sizing: border-box;
+  height: 25%;
+  margin: 0px;
+}
+
+.name {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    bottom: 8px;
+    left: 16px;
+    box-sizing: border-box;
+}
+
+img { 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.objective {
+   border-style: solid;
+   border-width: 0px 0px 2px 0px ;
+   margin: 15px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.objective-img{
+  float: left;
+  border: solid;
+  border-width: 3px;
+  box-sizing: border-box;
+  width: 30px;
+  height: auto;
+}
+
+.objective-text{
+  display: inline-block;
+  text-align: left;
+  color: white;
+  box-sizing: border-box;
+  margin: 15px 15px 15px 15px;
+}
+
+.phone{
+   border-style: solid;
+   border-width: 0px 0px 2px 0px;
+   box-sizing: border-box;
+   margin: 15px;
+   padding: 10px;
+}
+
+.phone-text {
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  margin: 15px 15px 15px 15px;
+  box-sizing: border-box;
+}
+
+.email{
+   border-style: solid;
+   border-width: 0px 0px 0px 0px;
+   box-sizing: border-box;
+   margin: 15px;
+   padding: 10px;
+}
+
+.email-text {
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  margin: 15px 15px 15px 15px;
+  box-sizing: border-box;
+}
+/**work experience box**/
+.work-experience {
+  float: left;
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  height: 300px;
+  width: 850px;
+  margin: 15px 15px 15px 15px;
+  box-sizing: border-box;
+}
+
+.work-img {
+  float: left;
+  background-color: #b30000;
+  height: auto;
+  width: 50px;
+  margin: 25px 30px 100% 30px;
+  box-sizing: border-box;
+}
+
+.job-box{
+  float: left;
+  border: solid;
+  border-width: 0px 0px 3px 0px;
+  box-sizing: border-box;
+  margin: 0px 10px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  width: 200px;
+  height: auto;
+}
+
+.job-box:hover {
+  background-color: gray;
+}
+
+.job-title {
+  font-weight: bold;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.job-date{
+  color: #b30000;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+
+.job-description{
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/**Education box**/
+.education {
+  position: relative;
+  
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  box-sizing: border-box;
+  height: 300px;
+  width: 850px;
+  margin: 15px 15px 15px 15px;
+}
+
+/**interest box**/
+.interest {
+  float: left;
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  box-sizing: border-box;
+  height: 300px;
+  width: 410px;
+  margin: 15px 15px 15px 15px;
+}
+
+/**Skills box**/
+.skills {
+  float: left;
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  box-sizing: border-box;
+  height: 300px;
+  width: 410px;
+  margin: 15px 15px 15px 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 10px 20px 20px 45px;
+}
+
+li.l1 {
+  border: solid;
+  border-width: 1px;
+  background-color: #b30000;
+  margin: 10px 110px 10px 0px;
+}
+
+li.l2 {
+  border: solid;
+  border-width: 1px;
+  background-color: #b30000;
+  margin: 10px 130px 10px 0px;
+}
+
+li.l3 {
+  border: solid;
+  border-width: 1px;
+  background-color: #b30000;
+  margin: 10px 0px 10px 0px;
+}
+
+li.l4 {
+  border: solid;
+  border-width: 1px;
+  background-color: #b30000;
+  margin: 10px 90px 10px 0px;
+  padding: 0px 101px 0px 0px;
+}
+

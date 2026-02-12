@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="bs css/school/bootstrap.min.css"> 
+    <link rel="stylesheet" href="bootstrap 5.3/bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/fontawesome.css">
+	  <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/solid.css">
+	  <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/brands.css"> 
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/product.css">
+    <link rel="stylesheet" href="bs css/navigation/preloader.css">
+   
+    <link rel="icon" type="image/x-icon" href="images/NCC-logo.png">
+    <title>Navotas City Council</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="topButton" title="Go to top">
+      <i class="icon solid fa-arrow-circle-up"></i>
+    </button>
+
+    <div id="preloader">
+      <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+              <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#000"></stop>
+                  <stop offset="100%" stop-color="#fff"></stop>
+              </linearGradient>
+              <mask id="mask1">
+                  <rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+              </mask>
+              <mask id="mask2">
+                  <rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+              </mask>
+          </defs>
+          
+          <g>
+              <g class="pl__ring-rotate">
+                  <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+              </g>
+          </g>
+          <g mask="url(#mask1)">
+              <g class="pl__ring-rotate">
+                  <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+              </g>
+          </g>
+          
+          <g>
+              <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+              </g>
+          </g>
+          <g mask="url(#mask1)">
+              <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+                  <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+              </g>
+          </g>
+          
+          <g>
+              <g transform="translate(64,28)">
+                  <g class="pl__arrows" transform="rotate(45,16,52)">
+                      <path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+                      <path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+                  </g>
+              </g>
+          </g>
+          <g mask="url(#mask2)">
+              <g transform="translate(64,28)">
+                  <g class="pl__arrows" transform="rotate(45,16,52)">
+                      <path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+                      <path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+                  </g>
+              </g>
+          </g>
+      </svg>
+  </div>
+  
+  
+  
+  <!--NAVIGATION PANEL-->
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+
+        <div class="" href="index.html">
+            <div class="sign">
+              <a href="#"><img src="images/NCC-logo.png" alt="Navotas City Council Logo">
+              </div>
+        </div>
+          
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: rgb(255, 255, 255);" ><i class="fa-solid fa-house"></i> Home</a>
+               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: rgb(255, 255, 255);" ><i class="fa-solid fa-circle-info"></i> About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="advancement.html" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-file-lines"></i> Advancement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Cart -->
+
+    <button class="btn btn-primary" id="cart-button" type="button" data-bs-toggle="modal" data-bs-target="#cart">
+      <i class="fa brands fa-shopping-cart"></i>
+    </button>
+
+    <div class="modal fade" id="cart">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="text-align: center;">🛒 Shopping Cart</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body" id="cart-body">
+            <div id="cart-page">
+              <table class="table cart-table">
+                <thead>
+                  <tr>
+                    <th class="product-column">Product</th>
+                    <th class="id-column">ID</th>
+                    <th class="quantity-column">Quantity</th>
+                    <th class="subtotal-column">Subtotal</th>
+                    <th class="remove-column"></th>
+                  </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+              </table>
+            </div>
+            <button type="button" class="button_top" onclick="clearCart()"> Clear Cart</button>
+              <span id="item-total"></span>
+          </div>
+          <div class="modal-footer">
+            <p id="total-cart">
+              <span id="cart-total"></span>
+            </p>
+            <button type="button" class="button_top" onclick="openCheckoutModal()">Check Out </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="item-added">
+      <p id="added-confirmation"></p>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="checkoutModalLabel">Checkout Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe id="checkoutFrame" src="checkoutform/checkout_form.php" width="100%" height="500px" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="officelaptops" class="laptops">Navotas City Council Scout Shop</h2>
+
+
+    <section>
+      <div class="card">
+        <div class="card-img">
+            <img src="images/pants.png" alt="Item 1" class="img">
+        </div>
+        <div class="card-title">Pants</div>
+        <div class="card-divider"></div> 
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Pants', 'ltpx1cg10', 750)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-img">
+          <img src="images/pants.png" alt="Item 2" class="img">
+      </div>
+      <div class="card-title">Pants</div>
+      <div class="card-divider"></div>
+      <div class="card-footer">
+          <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+          <button class="card-btn" onclick="addToCart('Pants', 'dxps15', 750)">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+          </button>
+      </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">
+        <img src="images/pants.png" alt="Item 3" class="img">
+    </div>
+    <div class="card-title">Pants</div>
+    <div class="card-divider"></div>
+    <div class="card-footer">
+        <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+        <button class="card-btn" onclick="addToCart('Pants', 'hpdg3', 750)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+        </button>
+    </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img">
+      <img src="images/pants.png" alt="Item 4" class="img">
+  </div>
+  <div class="card-title">Pants</div>
+  <div class="card-divider"></div>
+  <div class="card-footer">
+      <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+      <button class="card-btn" onclick="addToCart('Pants', 'lif5i14i2022', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+      </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img">
+      <img src="images/pants.png  " alt="Item 5" class="img">
+  </div>
+  <div class="card-title">Pants</div>
+  <div class="card-divider"></div>
+  <div class="card-footer">
+      <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+      <button class="card-btn" onclick="addToCart('Pants', 'mslg2', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+      </button>
+  </div>
+</div>
+<div class="card1">
+</div>
+     </section>
+    <section>
+      <div class="card">
+        <div class="card-img">
+            <img src="images/short.png  " alt="Item 6" class="img">
+        </div>
+        <div class="card-title">Short</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 550</div>
+            <button class="card-btn" onclick="addToCart('Short', 'llp7i', 550)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/short.png" alt="Item 7" class="img">
+        </div>
+        <div class="card-title">Short</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 550</div>
+            <button class="card-btn" onclick="addToCart('Short', 'rb15', 550)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+              
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/belt.png" alt="Item 8" class="img">
+        </div>
+        <div class="card-title">Belt</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 95</div>
+            <button class="card-btn" onclick="addToCart('Belt', 'arogzg14', 95)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/slide.png  " alt="Item 9" class="img">
+        </div>
+        <div class="card-title">Official Slide</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 45</div>
+            <button class="card-btn" onclick="addToCart('Official Slide', 'arogzm162023', 45)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/necker.png" alt="Item 10" class="img">
+        </div>
+        <div class="card-title">Official Necker</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 75</div>
+            <button class="card-btn" onclick="addToCart('Official Necker', 'arogss17', 75)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+    </section>
+
+    
+    <section> 
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 11" class="img">
+        </div>
+        <div class="card-title">Outfit Number</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 12</div>
+            <button class="card-btn" onclick="addToCart('Outfit Number', 'panot', 12)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+              
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 12" class="img">
+        </div>
+        <div class="card-title">Black Shoes</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 250</div>
+            <button class="card-btn" onclick="addToCart('Black Shoes', 'msik15', 250)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 13" class="img">
+        </div>
+        <div class="card-title">Type A Upper</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Upper', 'msicx17', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 14" class="img">
+        </div>
+        <div class="card-title">Type A Bottom</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Bottom', 'dp5470', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 15" class="img">
+        </div>
+        <div class="card-title">Rank Patch</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 24</div>
+            <button class="card-btn" onclick="addToCart('Rank Patch', 'hpzsg9', 24)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 16" class="img">
+        </div>
+        <div class="card-title">Outfit Number</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 12</div>
+            <button class="card-btn" onclick="addToCart('Outfit Number','panot',12)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 17" class="img">
+        </div>
+        <div class="card-title">Black Shoes</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 250</div>
+            <button class="card-btn" onclick="addToCart('Black Shoes', 'msik15', 250)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 18" class="img">
+        </div>
+        <div class="card-title">Type A Upper</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Upper', 'msicx17', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 19" class="img">
+        </div>
+        <div class="card-title">Type A Bottom</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Bottom', 'dp5470', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 20" class="img">
+        </div>
+        <div class="card-title">Rank Patch</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 24</div>
+            <button class="card-btn" onclick="addToCart('Rank Patch', 'hpzsg9', 24)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 21" class="img">
+        </div>
+        <div class="card-title">Outfit Number</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 12</div>
+            <button class="card-btn" onclick="addToCart('Outfit Number','panot', 121)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+              
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 22" class="img">
+        </div>
+        <div class="card-title">Black Shoes</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 250</div>
+            <button class="card-btn" onclick="addToCart('Black Shoes', 'msik15', 250)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+              
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 23" class="img">
+        </div>
+        <div class="card-title">Type A Upper</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Upper', 'msicx17', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+              
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 24" class="img">
+        </div>
+        <div class="card-title">Type A Bottom</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Bottom', 'dp5470', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 25" class="img">
+        </div>
+        <div class="card-title">Rank Patch</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 24</div>
+            <button class="card-btn" onclick="addToCart('Rank Patch', 'hpzsg9', 24)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 26" class="img">
+        </div>
+        <div class="card-title">Outfit Number</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 12</div>
+            <button class="card-btn" onclick="addToCart('Outfit Number', 'hpz12', 12)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+              
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 27" class="img">
+        </div>
+        <div class="card-title">Black Shoes</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 250</div>
+            <button class="card-btn" onclick="addToCart('Black Shoes', 'msik15', 250)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 28" class="img">
+        </div>
+        <div class="card-title">Type A Upper</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Upper', 'msicx17', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 29" class="img">
+        </div>
+        <div class="card-title">Type A Bottom</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 750</div>
+            <button class="card-btn" onclick="addToCart('Type A Bottom', 'dp5470', 750)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="Item 30" class="img">
+        </div>
+        <div class="card-title">Rank Patch</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+            <div class="card-price"><i class="fa-solid fa-peso-sign"></i> 24</div>
+            <button class="card-btn" onclick="addToCart('Rank Patch', 'hpzsg9', 24)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+
+            </button>
+        </div>
+    </div>
+    </section>
+
+
+    <div class="footer">
+      <div class="container" id="socials-container">
+          <a href="#"><img src="images/NCC-logo.png"></a> <br>
+        <span id="socials">
+          <a href="https://www.facebook.com/bspnavotas" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.youtube.com/@bspnavotascitycouncil357" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </span>
+      </div>
+      <div class="container" id="contacts-container">
+        <h1>LAMBERTO B. LINABAN SR. SCOUTING CENTER</h1>
+        <div class="container-fluid" id="office-address">
+          <div class="container" id="head-office-address">
+            <p>
+              <i class="fa-solid fa-location-dot" style="font-size: 25px; vertical-align: middle;"></i> 
+              <strong>Head Office</strong>
+            </p>
+            <p>
+              San Roque Elementary School<br>
+              A. Leongson St., San Roque<br>
+              1485 Navotas City<br>
+            </p>
+          </div>
+          
+          <div class="container" id="contact-info">
+            <p><strong>Customer Assistance Center</strong></p>
+            <p>
+              <i class="fa-solid fa-phone" style="font-size: 25px; vertical-align: middle;"></i> Tel: <a href="tel:(02) 8426-4987">(02) 8426-4987</a><br>
+              <i class="fa-solid fa-envelope" style="font-size: 25px; vertical-align: middle;"></i> Email: <a href="mailto:Bspnavotascouncil@gmail.com">Bspnavotascouncil@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+
+
+
+    <!-- scripts -->
+    <script src="bs js/preloader/preloader.js"></script>
+    <script src="bs js/counter/counter.js"></script>
+    <script src="bs js/navigation/bootstrap.bundle.min.js"></script>
+    <script src="aos.js"></script>
+    <script src="bs js/shop/bootstrap.bundle.min.js"></script>
+    <script src="bs js/shop/jquery.min.js"></script>
+    <script src="bs js/shop/jquery.dropotron.min.js"></script>
+    <script src="bs js/shop/browser.min.js"></script>
+    <script src="bs js/shop/breakpoints.min.js"></script>
+    <script src="bs js/shop/util.js"></script>
+    <script src="bs js/shop/main.js"></script>
+    <script src="bs js/shop/script.js"></script>
+    <script src="bs js/shop/cart.js"></script>
+
+  </body>
+</html>
