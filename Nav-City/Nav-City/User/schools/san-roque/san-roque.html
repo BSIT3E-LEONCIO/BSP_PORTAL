@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
+    <link rel="stylesheet" href="../../../font/fontawesome-free-6.4.0-web/css/fontawesome.css">
+	  <link rel="stylesheet" href="../../../font/fontawesome-free-6.4.0-web/css/solid.css">
+	  <link rel="stylesheet" href="../../../font/fontawesome-free-6.4.0-web/css/brands.css">
+    <link rel="stylesheet" href="../../../bs css/navigation/preloader.css">
+    <link rel="stylesheet" href="../../../bs css/aos.css">    
+    <link rel="stylesheet" href="../../../bs css/school/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../bs css/navigation/bootstrap.min.css">
+
+    <link rel="stylesheet" href="san-roque.css">
+    
+    <link rel="icon" type="image/x-icon" href="../../images/NCC-logo.png">
+    <title>Navotas City Council</title>
+</head>
+<body>
+
+ <div id="preloader">
+    <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#000"></stop>
+                <stop offset="100%" stop-color="#fff"></stop>
+            </linearGradient>
+            <mask id="mask1">
+                <rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+            </mask>
+            <mask id="mask2">
+                <rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+            </mask>
+        </defs>
+        
+        <g>
+            <g class="pl__ring-rotate">
+                <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+            </g>
+        </g>
+        <g mask="url(#mask1)">
+            <g class="pl__ring-rotate">
+                <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+            </g>
+        </g>
+        
+        <g>
+            <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+            </g>
+        </g>
+        <g mask="url(#mask1)">
+            <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+                <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+            </g>
+        </g>
+        
+        <g>
+            <g transform="translate(64,28)">
+                <g class="pl__arrows" transform="rotate(45,16,52)">
+                    <path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+                    <path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+                </g>
+            </g>
+        </g>
+        <g mask="url(#mask2)">
+            <g transform="translate(64,28)">
+                <g class="pl__arrows" transform="rotate(45,16,52)">
+                    <path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+                    <path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+
+<!--NAVIGATION PANEL-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+
+        <div class="Btn" href="index.html">
+            <div class="sign">
+              <a href="index.html"><img src="../../../images/NCC-logo.png" alt="Navotas City Council Logo">
+              </div>
+            <div class="text">Navotas City Council</div>
+
+        </div>
+          
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../about.html" ><i class="fa-solid fa-circle-info"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../advancement.html" > <i class="fa-solid fa-file-lines"></i> Advancement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../shop.html" ><i class="fa-solid fa-bag-shopping"></i> Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../school-dashboard.html" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                </li>
+            </ul>
+            <div class="logout">
+              <a class="nav-link" href="../../../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+<div id="file-folder"> 
+  <h2>KAUNLARAN HIGH SCHOOL</h2>
+<div class="container">
+   
+    <br>
+    <!-- Nav tabs -->
+    <ul id="tablist"   class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Membership</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Explorer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Pathfinder</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu3">Outdoorsman</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu4">Venturer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu5">Eagle Scout</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+
+        <!--MEMBERSHIP-->
+    <section>
+      <div id="modal" class="card" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" >
+              <div class="card-image-container">
+                <img src="images/gab.png">
+              </div>
+              <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+              <p class="card-des">
+                Registered No. : 00000000
+              </p>
+            </div>
+           
+             <div class="modal" id="myModal">
+             <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+
+        
+              <div class="modal-header">
+                <h4 class="modal-title">Sct. Christian Dave S. Gabriel</h4>
+              </div>
+
+              
+              <div class="modal-body">
+              <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+            <div class="left-box">
+              <div class="top-left">
+              <img id="resume" src="images/gab.png" alt="Cody Man">
+                <div class="objective">
+                  <img class="objective-img" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+                  <div class="objective-text">Gabriel, Christian Dave S. </div>
+                </div>
+                <div class="phone">
+                  <img class="objective-img" src="http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png">
+                  <div class="phone-text">09939882716<br>mobile<br>
+                  </div>
+                </div>
+                <div class="email">
+                  <img class="objective-img" src="http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png">
+                  <div class="email-text">Davegabriel@gmail.com<br>personal<br>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="work-experience">
+              <div class="work-img"> <img src="data:image/png;base64,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">
+              </div>
+              <h1 class="work-title">Education</h1>
+              <div class="job-box">
+              <div class="job-title">Kaunlaran High School (Senior High)</div>
+              <div class="job-date">2018 - 2020</div>
+            </div>
+              <div class="job-box">
+              <div class="job-title">Kaunlaran High School</div>
+              <div class="job-date">2013 - 2018 </div>
+            </div>
+              <div class="job-box">
+              <div class="job-title">Dagat-Dagatan Elementary School</div>
+              <div class="job-date">2013 - 2014</div>
+            </div>
+            </div>
+
+            <div class="merit-badges">
+              <div class="work-img"> <img src="data:image/png;base64,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">
+              </div>
+              <h1>Merit Badges</h1>
+              <div class="job-box1">
+                <img src="../../../images/mb/safety.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/citizenshipinthehome.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/scholarship.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/safety.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/citizenshipinthehome.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/scholarship.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/scholarship.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/safety.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/citizenshipinthehome.png">
+              </div>
+              <div class="job-box1">
+                <img src="../../../images/mb/scholarship.png">
+              </div>
+            </div>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+             </div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="card" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2" >
+              <div class="card-image-container">
+                <img src="images/gab.png">
+              </div>
+              <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+              <p class="card-des">
+                Registered No. : 00000000
+              </p>
+            </div>
+           
+             <div class="modal" id="myModal2">
+             <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+
+             
+              <div class="modal-header">
+                <h4 class="modal-title">Sct. Christian Dave S. Gabriel</h4>
+              </div>
+
+              <div class="modal-body">
+                
+
+                <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+                <div class="left-box">
+                  <div class="top-left">
+                  <img id="resume" src="images/gab.png" alt="Cody Man">
+                    <div class="objective">
+                      <img class="objective-img" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+                      <div class="objective-text">Gabriel, Christian Dave S. </div>
+                    </div>
+                    <div class="phone">
+                      <img class="objective-img" src="http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png">
+                      <div class="phone-text">09939882716<br>mobile<br>
+                      </div>
+                    </div>
+                    <div class="email">
+                      <img class="objective-img" src="http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png">
+                      <div class="email-text">Davegabriel@gmail.com<br>personal<br>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="work-experience">
+                  <div class="work-img"> <img src="data:image/png;base64,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">
+                  </div>
+                  <h1 class="work-title">Education</h1>
+                  <div class="job-box">
+                  <div class="job-title">Kaunlaran High School (Senior High)</div>
+                  <div class="job-date">2018 - 2020</div>
+                </div>
+                  <div class="job-box">
+                  <div class="job-title">Kaunlaran High School</div>
+                  <div class="job-date">2013 - 2018 </div>
+                </div>
+                  <div class="job-box">
+                  <div class="job-title">Dagat-Dagatan Elementary School</div>
+                  <div class="job-date">2013 - 2014</div>
+                </div>
+                </div>
+    
+                <div class="merit-badges">
+                  <div class="work-img"> <img src="data:image/png;base64,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">
+                  </div>
+                  <h1>Merit Badges</h1>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/safety.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/citizenshipinthehome.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/scholarship.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/safety.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/citizenshipinthehome.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/scholarship.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/scholarship.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/safety.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/citizenshipinthehome.png">
+                  </div>
+                  <div class="job-box1">
+                    <img src="../../../images/mb/scholarship.png">
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+             </div>
+             </div>
+
+             
+            <div class="card" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">
+              <div class="card-image-container">
+                <img src="images/gab.png">
+              </div>
+              <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+              <p class="card-des">
+                Registered No. : 00000000
+              </p>
+            </div>
+            <div class="modal" id="myModal3">
+              <div class="modal-dialog modal-xl">
+               <div class="modal-content">
+ 
+         
+               <div class="modal-header">
+                 <h4 class="modal-title">Sct. Christian Dave S. Gabriel</h4>
+               </div>
+ 
+               
+               <div class="modal-body">
+               <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+             <div class="left-box">
+               <div class="top-left">
+               <img id="resume" src="images/gab.png" alt="Cody Man">
+                 <div class="objective">
+                   <img class="objective-img" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+                   <div class="objective-text">Gabriel, Christian Dave S. </div>
+                 </div>
+                 <div class="phone">
+                   <img class="objective-img" src="http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png">
+                   <div class="phone-text">09939882716<br>mobile<br>
+                   </div>
+                 </div>
+                 <div class="email">
+                   <img class="objective-img" src="http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png">
+                   <div class="email-text">Davegabriel@gmail.com<br>personal<br>
+                   </div>
+                 </div>
+             </div>
+             </div>
+             <div class="work-experience">
+               <div class="work-img"> <img src="data:image/png;base64,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">
+               </div>
+               <h1 class="work-title">Education</h1>
+               <div class="job-box">
+               <div class="job-title">Kaunlaran High School (Senior High)</div>
+               <div class="job-date">2018 - 2020</div>
+             </div>
+               <div class="job-box">
+               <div class="job-title">Kaunlaran High School</div>
+               <div class="job-date">2013 - 2018 </div>
+             </div>
+               <div class="job-box">
+               <div class="job-title">Dagat-Dagatan Elementary School</div>
+               <div class="job-date">2013 - 2014</div>
+             </div>
+             </div>
+ 
+             <div class="merit-badges">
+               <div class="work-img"> <img src="data:image/png;base64,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">
+               </div>
+               <h1>Merit Badges</h1>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+             </div>
+             </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+               </div>
+               </div>
+              </div>
+              </div>
+ 
+
+            <div class="card" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">
+              <div class="card-image-container">
+                <img src="images/gab.png">
+              </div>
+              <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+              <p class="card-des">
+                Registered No. : 00000000
+              </p>
+            </div>
+            <div class="modal" id="myModal4">
+              <div class="modal-dialog modal-xl">
+               <div class="modal-content">
+ 
+         
+               <div class="modal-header">
+                 <h4 class="modal-title">Sct. Christian Dave S. Gabriel</h4>
+               </div>
+ 
+               
+               <div class="modal-body">
+               <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+             <div class="left-box">
+               <div class="top-left">
+               <img id="resume" src="images/gab.png" alt="Cody Man">
+                 <div class="objective">
+                   <img class="objective-img" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+                   <div class="objective-text">Gabriel, Christian Dave S. </div>
+                 </div>
+                 <div class="phone">
+                   <img class="objective-img" src="http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png">
+                   <div class="phone-text">09939882716<br>mobile<br>
+                   </div>
+                 </div>
+                 <div class="email">
+                   <img class="objective-img" src="http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png">
+                   <div class="email-text">Davegabriel@gmail.com<br>personal<br>
+                   </div>
+                 </div>
+             </div>
+             </div>
+             <div class="work-experience">
+               <div class="work-img"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX///8AAAB6enp3d3fw8PD4+Pj8/PywsLC+vr7MzMz09PTs7OxDQ0Ph4eGIiIiSkpLU1NRXV1clJSXb29tgYGBPT0+bm5ulpaWAgIA+Pj7R0dFnZ2dvb2/n5+e4uLgkJCQzMzMSEhIdHR1KSko5OTmqqqoZGRksLCxBQUFbW1vExMQLCwuPj4+GhobWHsYEAAAHgUlEQVR4nO2d6ZaiMBCFVSAsyqIouCDubbdjv//rjYgCQqJAAgl96vvVI07IhSyVqkrs9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALoN4l2BJlHCeajwrkSDmNak3+9PLJN3RdgTtUtDnfWfzFS599da61LqvyIteVeJJWvv3C+y9da8K8YGpE0x8mKmWvdbqmttiPr692HH5V1FGpA6fisvZqx270WiaJhEen5wISPpvKtcnbV/LK0v4uh3athRtJ9K8mJ+tK5YO2v7/eBCZnPtwIs01ENNeTGHu7UjLk75wYWM5PCWgSMa79f2loG+iLO97glntiKdbLnUYaoLI/BeEdfaM9UXsRfE2omm9syyiC0zEawdpAcNyYsJOLfWqpZLHXhZOyiyXNgOLmSmXKyd9ZX94EJm37a1I6uspr7ybFu0dhzpX+v6Inbt+HbWXvuvL6VZ3040bF9WHOXFrC7PyrDH/OWt7sFvIy5lI6RbFrHloBqM9TVsudQhYOjbkf0RbzlYRj6T+eOdQ5c/9C5l0/7iLeIDe5ti2JHVBe/6l2JR09px5jveVS/Nbl7Ft4Oilj3ERotE5uwNe+UNAQEslzrE1s5n3DnvmlIw/zjsGGFTPpe2mIXvrJ0K0SKRIUWyDE9My6UOI6/wIpVL11tnnvGLb8e02/S5tMX++nApy6e/9vpSZqebtXPiXYuG8W/mi6BrIxaM/OFjkre6ZqOV4fwa2nHmdUPTYrLB2OJGmLNGZ4Hlq5puyt2zA1YawbCRs3Gy1XOq1C1+Va3DjLxcjEPV348vRqaPebE6NgyN7BIuY/cajTvj218D3vWtyPlaNmwcJWzdXiHCFvN1uArZbL+kasHUqKfqhVImku/crojnPL2NLXVCjK+N9PtXNeOHJHNSQWR2GtaQdzN20iJ+vGXSAnTBfAALr568G5ne9mwBxkUww2BrUSRQKZkw6F2hoUk7blJwVB1b8mQXHUYPaSs+gV8iq7cOmRKgbB6J0kOyL1R0zafPztCyBcYfmYJ4ckYekwhpNgd9kny69nk7BGasEojMbKmL7JWhGuw4qfu3UmvPDAWu2ZIPuYvKZdC+62o/uLDMjHo1SX8wX3CubXbK0ZV1Ko36Un6A/5J5KrNhhJ7xqYHci9fQ6ODxaXF+bbxT7gJM12OQTOO+3sZ6911DHzRlyW0GOuukkifX1zv5z89VreAgiJ4nWtrs80yP9hL7rmRNpReo5EZK7XlBivZh4eejIdOZcuzjp4V1tFdMoleo5e6XKIxXjDPPxT7dYRiwmET2QYh9iMj14ofIQGE+gyaJxyVr4q2Fb0KKPqcTuSHMesixkpxIeoXr/G2TuSi76p8ExU55F+kk7rqqLGynIO++SVqTsk55WoWoGKxJPFh559uUYEWtayxEDj5+1pPVfJOif4eFV5B0C4x7ceQ5ufYa//PWKcunU+2CEP+oXA/zqKgVmoUik9aId6AerWLjijAu0qSEvIl0wc56imPh5yBqhV6hyOQS0UU8kUJSp3yfOYbrevenowXEp0OtsJDHvfusMGJKaGkmsVMeCEvZYfg2H5JWYbGRpgvgT27+g02cKfOd8qvY9e7/FWG7HlOFfqHEdAFcIpCxveIdYErWEbmZ47se0q8ldgLQKiwaX7MqCvsfZ8pvQteT33Q9lgoL030aSawQjPo3JQTxXA0fHrrNeqW9lZQKiyNpsjysGG67dUrCPfLN2LQrWe2UCjH3SpeHVQOKZ4L5mlW7rJwmQacQF1eyayvsR2MmvlPGd9OkGnnkdAqXmBI9GoUR+E5ZNDhbUYjphukSnyLsPUs7Zbw3ulrXY6gQd9/Ua0AV2D8nkTCHLkOJSiE2vJss8elTFwJtrQW0QSwqhRdciWnKrRjJGVQKsRHsdFrrvELUw/aP1C/UeYU9A1tiugbovkIHV+Auncy6r1DFFbhJFzrdV4jd6LtN1zrdV4g1o77T651XiLBDaSYC3HmFBtbayBTYeYVDbIHzP6Sw6GaLyMRHO68Qa5VmFsDdV5iPG8aky8PuK8RO+JnlYU+M9Oc5WcEnQmyBYfoFMTZJeWQFn8D3w+WnL7RNSFbwCfxYmiyeEGHt0TYUuW0GLmhwzvrJRMjSH9cXeKNwzMfxNXmluEGhfWhPbTHVdIPXwS7ky/FOL+33R5QC7yBT15cONnrpfq5CwzR8uinq2ZwF/jYrMILvYDNtXmBP4ZnOflTaOJoW8duWMGrpqE+F18lR46ayTYvw2dwltXl6Mn6d1SwU5mgd5HaS2FNm7HZalEVtc5/enkHmc3VQe5O/zes3BdbtjDgDnr8nINu7pvVd5ccJa7ww/CYP5jt6QvxUgvu7a0bfXIxz5yOMcMV6ZN2vQsF+1wvpc3aH3EwGupC/yKK4PguLdeq5Qsp74p6k+sdhbyX/sYQXqHXiGOq+NK7WZidjydPbN8yoQIareoPx4v0QtFmMB566lAV/Z+9AytDVNdX3bOt3IAWr6SqQBnPL9qITmtyhkkrrsEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC/w3+3wofRvzTtHQAAAABJRU5ErkJggg==">
+               </div>
+               <h1 class="work-title">Education</h1>
+               <div class="job-box">
+               <div class="job-title">Kaunlaran High School (Senior High)</div>
+               <div class="job-date">2018 - 2020</div>
+             </div>
+               <div class="job-box">
+               <div class="job-title">Kaunlaran High School</div>
+               <div class="job-date">2013 - 2018 </div>
+             </div>
+               <div class="job-box">
+               <div class="job-title">Dagat-Dagatan Elementary School</div>
+               <div class="job-date">2013 - 2014</div>
+             </div>
+             </div>
+ 
+             <div class="merit-badges">
+               <div class="work-img"> <img src="data:image/png;base64,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">
+               </div>
+               <h1>Merit Badges</h1>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+             </div>
+             </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+               </div>
+               </div>
+              </div>
+              </div>
+
+            <div class="card"type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5" >
+              <div class="card-image-container">
+                <img src="images/gab.png">
+              </div>
+              <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+              <p class="card-des">
+                Registered No. : 00000000
+              </p>
+            </div>
+            <div class="modal" id="myModal5">
+              <div class="modal-dialog modal-xl">
+               <div class="modal-content">
+ 
+         
+               <div class="modal-header">
+                 <h4 class="modal-title">Sct. Christian Dave S. Gabriel</h4>
+               </div>
+ 
+               
+               <div class="modal-body">
+               <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+             <div class="left-box">
+               <div class="top-left">
+               <img id="resume" src="images/gab.png" alt="Cody Man">
+                 <div class="objective">
+                   <img class="objective-img" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+                   <div class="objective-text">Gabriel, Christian Dave S. </div>
+                 </div>
+                 <div class="phone">
+                   <img class="objective-img" src="http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png">
+                   <div class="phone-text">09939882716<br>mobile<br>
+                   </div>
+                 </div>
+                 <div class="email">
+                   <img class="objective-img" src="http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png">
+                   <div class="email-text">Davegabriel@gmail.com<br>personal<br>
+                   </div>
+                 </div>
+             </div>
+             </div>
+             <div class="work-experience">
+               <div class="work-img"> <img src="data:image/png;base64,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">
+               </div>
+               <h1 class="work-title">Education</h1>
+               <div class="job-box">
+               <div class="job-title">Kaunlaran High School (Senior High)</div>
+               <div class="job-date">2018 - 2020</div>
+             </div>
+               <div class="job-box">
+               <div class="job-title">Kaunlaran High School</div>
+               <div class="job-date">2013 - 2018 </div>
+             </div>
+               <div class="job-box">
+               <div class="job-title">Dagat-Dagatan Elementary School</div>
+               <div class="job-date">2013 - 2014</div>
+             </div>
+             </div>
+ 
+             <div class="merit-badges">
+               <div class="work-img"> <img src="data:image/png;base64,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">
+               </div>
+               <h1>Merit Badges</h1>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/safety.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/citizenshipinthehome.png">
+               </div>
+               <div class="job-box1">
+                 <img src="../../../images/mb/scholarship.png">
+               </div>
+             </div>
+             </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+               </div>
+               </div>
+              </div>
+              </div>
+        
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+  
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+        </div>
+        <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+        <p class="card-des">
+          Registered No. : 00000000
+        </p>
+      </div>
+  
+    </section>
+
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <!--EXPLORER-->
+        <section>
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+      
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+  </section>
+       
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <!--PATHFINDER-->
+        <section>
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+      
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+  </section>
+      </div>
+      <div id="menu3" class="container tab-pane fade"><br>
+       <!--OUTDOORSMAN-->
+       <section>
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+    
+</section>
+
+<section>
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+</section>
+
+<section>
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-image-container">
+    </div>
+    <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+    <p class="card-des">
+      Registered No. : 00000000
+    </p>
+  </div>
+
+</section>
+      </div>
+      <div id="menu4" class="container tab-pane fade"><br>
+        <!--VENTURER-->
+        <section>
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+            </div>
+            <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+            <p class="card-des">
+              Registered No. : 00000000
+            </p>
+          </div>
+      
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-image-container">
+      </div>
+      <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+      <p class="card-des">
+        Registered No. : 00000000
+      </p>
+    </div>
+
+  </section>
+      </div>
+      <div id="menu5" class="container tab-pane fade"><br>
+       <!--EAGLE SCOUT-->
+       <section>
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+    
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+    
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+    
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+    
+        <div class="card">
+          <div class="card-image-container">
+          </div>
+          <p class="card-title">Sct. Christian Dave S. Gabriel</p>
+          <p class="card-des">
+            Registered No. : 00000000
+          </p>
+        </div>
+    
+      </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <div class="container" id="socials-container">
+            <a href="#"><img src="../../../images/NCC-logo.png"></a> <br>
+          <span id="socials">
+            <a href="https://www.facebook.com/bspnavotas" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/@bspnavotascitycouncil357" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+          </span>
+        </div>
+        <div class="container" id="contacts-container">
+          <h1>LAMBERTO B. LINABAN SR. SCOUTING CENTER</h1>
+          <div class="container-fluid" id="office-address">
+            <div class="container" id="head-office-address">
+              <p>
+                <i class="fa-solid fa-location-dot" style="font-size: 25px; vertical-align: middle;"></i> 
+                <strong>Head Office</strong>
+              </p>
+              <p>
+                San Roque Elementary School<br>
+                A. Leongson St., San Roque<br>
+                1485 Navotas City<br>
+              </p>
+            </div>
+            
+            <div class="container" id="contact-info">
+              <p><strong>Customer Assistance Center</strong></p>
+              <p>
+                <i class="fa-solid fa-phone" style="font-size: 25px; vertical-align: middle;"></i> Tel: <a href="tel:(02) 8426-4987">(02) 8426-4987</a><br>
+                <i class="fa-solid fa-envelope" style="font-size: 25px; vertical-align: middle;"></i> Email: <a href="mailto:Bspnavotascouncil@gmail.com">Bspnavotascouncil@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+<script src="../../../bs js/preloader/preloader.js"></script>
+<script src="../../../bs js/school/jquery.slim.min.js"></script>
+<script src="../../../bs js/school/popper.min.js"></script>
+<script src="../../../bs js/school/bootstrap.bundle.min.js"></script>
+<script src="../../../bs js/counter/counter.js"></script>
+<script src="../../../bs js/navigation/bootstrap.bundle.min.js"></script>
+<script src="../../../aos.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

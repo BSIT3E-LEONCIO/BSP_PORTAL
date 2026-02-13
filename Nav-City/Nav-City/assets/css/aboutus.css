@@ -1,0 +1,178 @@
+/* Company Description */
+#company-about {
+	margin: auto 10em;
+}
+#company-about p {
+	margin: 2em 5em;
+	font-size: 1.2em;
+	text-indent: 5em;
+}
+#company-about h1 {
+	margin: 3em 0 1em 0;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+
+
+
+/* Contact Info */
+.contact-info {
+	display: flex;
+	width: 100%;
+	padding: 5em 10em 2em 10em;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.card {
+	background: #2f3542;
+	padding: 0 3em;
+	margin: 3em 3em;
+	width: calc(33% - 20px);
+	height: 15em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 20%;
+	margin-bottom: 60px;
+}
+
+.card-icon {
+	font-size: 28px;
+	background: #ff6348;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
+}
+
+.card:hover .card-icon {
+	background: none;
+	color: #ff6348;
+	transform: scale(1.6);
+}
+
+.card p {
+	margin-top: 20px;
+	font-weight:300;
+	letter-spacing: 2px;
+	max-height: 0;
+	opacity: 0;
+	transition: 0.3s linear;
+}
+
+.card:hover p {
+	max-height: 40px;
+	opacity: 1; 
+}
+	
+
+
+/* Organizational Chart */
+#company-orgchart h1 {
+	text-align: center;
+	font-size: 1.5em;
+}
+#org-chart {
+    width: 65%;
+    clear: both;
+}
+#org-chart div {
+    width: 40%;
+    height: 600px;
+    float: left;
+    margin: 30px 5% 30px 5%;
+    overflow: hidden;
+    border: solid 0px #000000;
+    box-shadow: 0px 0px #0968ff;
+    transition: 0.25s ease-in-out;
+}
+#org-chart div:hover h4 {
+    border-bottom: solid 5px #0968ff;
+}
+#org-chart div img {
+    width: 90%;
+    border-radius: 50%;
+    margin: 0 5% 30px 5%;
+    padding: 20px 0 0px 0;
+}
+#org-chart h4 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: solid 1px #0968ff;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+#org-chart h5 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 736px) {
+	.contact-info {
+		flex-direction: column;
+		padding: 1em 1em;
+	}
+	.card {
+		width: 100%;
+		height: 11em;
+		margin: 1em 0;
+	}
+	.card p {
+		opacity: 1;
+	}
+	#company-about {
+		margin: auto;
+	}
+	#company-about p {
+		margin: 1em;
+		text-align: justify;
+	}
+	#org-chart {
+		width: 100%;
+	}
+	#org-chart div {
+		width: 90%;
+		height: auto;
+	}
+}
+	
+@media screen and (max-width: 980px) {
+	.contact-info {
+		flex-direction: column;
+		padding: 1em 1em;
+	}
+	.card {
+		width: 100%;
+		height: 11em;
+		margin: 1em 0;
+	}
+	.card p {
+		opacity: 1;
+	}
+	#company-about {
+		margin: auto;
+	}
+	#company-about p {
+		margin: 1em;
+		text-align: justify;
+	}
+	#org-chart {
+		width: 100%;
+	}
+	#org-chart div {
+		width: 90%;
+		height: auto;
+	}
+}
